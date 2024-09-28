@@ -1268,6 +1268,7 @@ GameObject:
   - component: {fileID: 287324687}
   - component: {fileID: 287324691}
   - component: {fileID: 287324690}
+  - component: {fileID: 287324692}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Sun
@@ -1284,11 +1285,11 @@ Transform:
   m_GameObject: {fileID: 287324685}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.59, y: 1.0833334, z: 16.58}
-  m_LocalScale: {x: 15, y: 1, z: 15}
+  m_LocalPosition: {x: 3.2841997, y: 1.23, z: 1.218136}
+  m_LocalScale: {x: 0.29999998, y: 0.3, z: 0.29999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1506687665}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &287324687
 SphereCollider:
@@ -1414,7 +1415,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 287324692}
+        m_TargetAssemblyTypeName: ManageGravityOnPlanet, Assembly-CSharp
+        m_MethodName: setGravityOnPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1539,7 +1552,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &287324692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287324685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb397645a0b90a4bbcd561f7ee24881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!1001 &291966812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10749,9 +10775,6 @@ Transform:
   m_LocalScale: {x: 0.02, y: 0.3, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1546491834}
-  - {fileID: 287324686}
-  - {fileID: 1997267368}
   - {fileID: 557213812}
   - {fileID: 905906160}
   - {fileID: 986419396}
@@ -11006,6 +11029,7 @@ GameObject:
   - component: {fileID: 1546491835}
   - component: {fileID: 1546491839}
   - component: {fileID: 1546491838}
+  - component: {fileID: 1546491840}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Earth
@@ -11022,11 +11046,11 @@ Transform:
   m_GameObject: {fileID: 1546491833}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8499861, y: 0.7786667, z: -0.12000203}
-  m_LocalScale: {x: 10, y: 0.6666666, z: 10}
+  m_LocalPosition: {x: 3.299, y: 1.1386, z: 0.8841359}
+  m_LocalScale: {x: 0.19999999, y: 0.2, z: 0.19999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1506687665}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1546491835
 SphereCollider:
@@ -11152,7 +11176,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1546491840}
+        m_TargetAssemblyTypeName: ManageGravityOnPlanet, Assembly-CSharp
+        m_MethodName: setGravityOnPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -11277,7 +11313,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &1546491840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546491833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb397645a0b90a4bbcd561f7ee24881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!1 &1553593116
 GameObject:
   m_ObjectHideFlags: 0
@@ -12785,6 +12834,7 @@ GameObject:
   - component: {fileID: 1997267371}
   - component: {fileID: 1997267370}
   - component: {fileID: 1997267369}
+  - component: {fileID: 1997267374}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Moon
@@ -12801,11 +12851,11 @@ Transform:
   m_GameObject: {fileID: 1997267367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.2, y: 1.2366667, z: 28.34}
-  m_LocalScale: {x: 5, y: 0.3333333, z: 5}
+  m_LocalPosition: {x: 3.2319999, y: 1.276, z: 1.453336}
+  m_LocalScale: {x: 0.099999994, y: 0.1, z: 0.099999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1506687665}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1997267369
 MonoBehaviour:
@@ -12860,7 +12910,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1997267374}
+        m_TargetAssemblyTypeName: ManageGravityOnPlanet, Assembly-CSharp
+        m_MethodName: setGravityOnPlanet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -12985,7 +13047,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!135 &1997267371
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13057,6 +13119,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997267367}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1997267374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997267367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb397645a0b90a4bbcd561f7ee24881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!198 &1997430108 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5377429380903153774, guid: 1505dd52bb51a4ef29ccbc27d77a9eb3,
@@ -13802,4 +13877,7 @@ SceneRoots:
   - {fileID: 1328754691}
   - {fileID: 805483586}
   - {fileID: 1506687665}
+  - {fileID: 1546491834}
+  - {fileID: 287324686}
+  - {fileID: 1997267368}
   - {fileID: 857313984}
